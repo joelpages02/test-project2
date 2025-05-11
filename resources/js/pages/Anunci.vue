@@ -172,7 +172,6 @@ function filtrarPorCategoria() {
     })
     .catch(error => {
         console.error('Error al filtrar por categoría:', error);
-        // No hacemos filtrado local, simplemente mostramos un mensaje de error
         alert('Error al filtrar las categorías. Por favor, inténtelo de nuevo.');
     });
 }
