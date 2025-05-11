@@ -172,9 +172,8 @@ function filtrarPorCategoria() {
     })
     .catch(error => {
         console.error('Error al filtrar por categoría:', error);
-        anuncis.value = props.anuncis.filter(anunci => 
-            anunci.category?.name === filters.value.category
-        );
+        // No hacemos filtrado local, simplemente mostramos un mensaje de error
+        alert('Error al filtrar las categorías. Por favor, inténtelo de nuevo.');
     });
 }
 
